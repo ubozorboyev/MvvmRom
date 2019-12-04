@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MvvmRom</string>
+    <string name="loadding">Loadding...</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/groupFragment">
+
+    <fragment
+        tools:layout="@layout/group_fragment"
+        android:id="@+id/groupFragment"
+        android:name="com.example.mvvmrom.ui.groups.GroupFragment"
+        android:label="GroupFragment" >
+        <action
+            android:id="@+id/action_groupFragment_to_studentFragment"
+            app:destination="@id/studentFragment" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/student_fragmnet"
+        android:id="@+id/studentFragment"
+        android:name="com.example.mvvmrom.ui.students.StudentFragment"
+        android:label="StudentFragment">
+
+        <argument android:name="group_id"
+                  app:argType="integer"
+                  app:nullable="false"/>
+
+    </fragment>
+
+</navigation>

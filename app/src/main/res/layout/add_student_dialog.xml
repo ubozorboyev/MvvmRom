@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputStudentName"
+        android:textSize="16sp"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputStudentSurname"
+        android:textSize="16sp"
+        android:hint="Surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputStudentAge"
+        android:textSize="16sp"
+        android:hint="Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/bg_button"
+            android:id="@+id/cancelStudentButton"
+            android:layout_marginRight="16dp"
+            android:textSize="14sp"
+            android:text="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp" />
+
+
+        <Button
+            android:background="@drawable/bg_button"
+            android:id="@+id/addStudentButton"
+            android:textSize="14sp"
+            android:text="ADd"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

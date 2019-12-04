@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editGroupName"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:hint="Group name"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="16dp"
+            android:textColor="#E41B1B"
+            android:textSize="18sp"
+            android:id="@+id/cancelEditButton"
+            android:background="@drawable/bg_button"
+            android:text="Cancel"
+            android:layout_width="80dp"
+            android:layout_height="42dp"/>
+
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:id="@+id/okEditButton"
+            android:background="@drawable/bg_button"
+            android:text="Ok"
+            android:layout_width="80dp"
+            android:layout_height="42dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
